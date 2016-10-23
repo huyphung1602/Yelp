@@ -21,15 +21,15 @@ The following **additional** features are implemented:
 - [x] Categories should show a subset of the full list with a "See All" row to expand.
 - [x] Change the UI View to be more delicious, add many icons for the apps
 - [] Infinite scroll for restaurant results
-- [] Implement map view of restaurant results
+- [x] Implement map view of restaurant results
 - [] Implement a custom switch
-- [] Implement the restaurant detail page.
+- [x] Implement the restaurant detail page.
 
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
 
-![Video Walkthrough](http://i.imgur.com/b06upwz.gif)
+![Video Walkthrough](http://i.imgur.com/0AIlsRk.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
