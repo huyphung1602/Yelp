@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		222D8A5B19CCF9F900D2DB53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222D8A5A19CCF9F900D2DB53 /* AppDelegate.swift */; };
-		222D8A6019CCF9F900D2DB53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 222D8A5E19CCF9F900D2DB53 /* Main.storyboard */; };
 		222D8A6219CCF9F900D2DB53 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 222D8A6119CCF9F900D2DB53 /* Images.xcassets */; };
 		222D8A6519CCF9F900D2DB53 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 222D8A6319CCF9F900D2DB53 /* LaunchScreen.xib */; };
 		222D8A7119CCF9F900D2DB53 /* YelpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222D8A7019CCF9F900D2DB53 /* YelpTests.swift */; };
@@ -19,6 +18,8 @@
 		F53F814A1DB68118009F41C2 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53F81491DB68118009F41C2 /* FilterViewController.swift */; };
 		F53F814E1DB68A5F009F41C2 /* SwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53F814D1DB68A5F009F41C2 /* SwitchCell.swift */; };
 		F555B5441DBA8CEA0040E73B /* DealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F555B5431DBA8CEA0040E73B /* DealCell.swift */; };
+		F5AB43A41DBD0E8000100EFC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AB43A31DBD0E8000100EFC /* DetailViewController.swift */; };
+		F5AB43A61DBD111700100EFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5AB43A51DBD111700100EFC /* Main.storyboard */; };
 		F5CD2A431DB5416E007442D6 /* BusinessCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CD2A421DB5416D007442D6 /* BusinessCell.swift */; };
 		F5F730A81DBC750200732AB8 /* SortCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F730A71DBC750200732AB8 /* SortCell.swift */; };
 		F5F730AA1DBCA5DB00732AB8 /* DistanceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F730A91DBCA5DB00732AB8 /* DistanceCell.swift */; };
@@ -38,7 +39,6 @@
 		222D8A5519CCF9F900D2DB53 /* Yelp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yelp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		222D8A5919CCF9F900D2DB53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		222D8A5A19CCF9F900D2DB53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		222D8A5F19CCF9F900D2DB53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		222D8A6119CCF9F900D2DB53 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		222D8A6419CCF9F900D2DB53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		222D8A6A19CCF9F900D2DB53 /* YelpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YelpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +53,8 @@
 		F53F81491DB68118009F41C2 /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		F53F814D1DB68A5F009F41C2 /* SwitchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchCell.swift; sourceTree = "<group>"; };
 		F555B5431DBA8CEA0040E73B /* DealCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealCell.swift; sourceTree = "<group>"; };
+		F5AB43A31DBD0E8000100EFC /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F5AB43A51DBD111700100EFC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
 		F5CD2A421DB5416D007442D6 /* BusinessCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessCell.swift; sourceTree = "<group>"; };
 		F5F730A71DBC750200732AB8 /* SortCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortCell.swift; sourceTree = "<group>"; };
 		F5F730A91DBCA5DB00732AB8 /* DistanceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistanceCell.swift; sourceTree = "<group>"; };
@@ -104,7 +106,7 @@
 				222D8A7A19CCFAAA00D2DB53 /* API */,
 				22AAAA9D1AEA1EC600A544AF /* View Controllers */,
 				222D8A5A19CCF9F900D2DB53 /* AppDelegate.swift */,
-				222D8A5E19CCF9F900D2DB53 /* Main.storyboard */,
+				F5AB43A51DBD111700100EFC /* Main.storyboard */,
 				F53F814D1DB68A5F009F41C2 /* SwitchCell.swift */,
 				F5F730A71DBC750200732AB8 /* SortCell.swift */,
 				F5F730A91DBCA5DB00732AB8 /* DistanceCell.swift */,
@@ -163,6 +165,7 @@
 			children = (
 				22AAAA9B1AEA1EC300A544AF /* BusinessesViewController.swift */,
 				F53F81491DB68118009F41C2 /* FilterViewController.swift */,
+				F5AB43A31DBD0E8000100EFC /* DetailViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -271,7 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				222D8A6019CCF9F900D2DB53 /* Main.storyboard in Resources */,
+				F5AB43A61DBD111700100EFC /* Main.storyboard in Resources */,
 				222D8A6519CCF9F900D2DB53 /* LaunchScreen.xib in Resources */,
 				222D8A6219CCF9F900D2DB53 /* Images.xcassets in Resources */,
 			);
@@ -339,6 +342,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5AB43A41DBD0E8000100EFC /* DetailViewController.swift in Sources */,
 				F5F730AA1DBCA5DB00732AB8 /* DistanceCell.swift in Sources */,
 				F53F814A1DB68118009F41C2 /* FilterViewController.swift in Sources */,
 				F5CD2A431DB5416E007442D6 /* BusinessCell.swift in Sources */,
@@ -371,14 +375,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		222D8A5E19CCF9F900D2DB53 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				222D8A5F19CCF9F900D2DB53 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		222D8A6319CCF9F900D2DB53 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

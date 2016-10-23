@@ -428,7 +428,7 @@ extension FilterViewController: UITableViewDataSource, UITableViewDelegate, Swit
         
     }
     
-    // Function for number of sectio
+    // Function for number of section
     func numberOfSections(in tableView: UITableView) -> Int {
          return self.sectionName.count
     }
@@ -485,17 +485,20 @@ extension FilterViewController: UITableViewDataSource, UITableViewDelegate, Swit
         
     }
     
+    // Switch cell delegate
     func switchCell(switchCell: SwitchCell, didChangeValue value: Bool) {
         let ip = tableView.indexPath(for: switchCell)
         switchStates[ip!.row] = value
         print("filterVC got signal from switch cell")
     }
-    
+
+    // Deal cell delegate
     func dealCell(dealCell: DealCell, didChangeValue value: Bool) {
         dealStates = value
         print("filterVC got signal from deal cell")
     }
-    
+
+    // Sort cell delegate
     func sortCell(sortCell: SortCell, didChangeValue value: Bool) {
         let ip = tableView.indexPath(for: sortCell)
         // Set all the sort bool value -> false
@@ -518,6 +521,7 @@ extension FilterViewController: UITableViewDataSource, UITableViewDelegate, Swit
         tableView.reloadData()
     }
     
+    // Distance cell delegate
     func distanceCell(distanceCell: DistanceCell, didChangeValue value: Bool) {
         let ip = tableView.indexPath(for: distanceCell)
         // Set all the distance bool value -> false

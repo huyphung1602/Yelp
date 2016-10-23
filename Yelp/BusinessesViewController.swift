@@ -72,10 +72,22 @@ class BusinessesViewController: UIViewController {
     */
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let navController = segue.destination as! UINavigationController
-        let filterVC = navController.topViewController as! FilterViewController
         
-        filterVC.delegate = self
+        // For filter view
+        if (segue.identifier == "filterSegue") {
+            let navController = segue.destination as! UINavigationController
+            let filterVC = navController.topViewController as! FilterViewController
+            
+            filterVC.delegate = self
+        }
+            
+        // For detail view
+        else {
+            let ip = tableView.indexPathForSelectedRow
+            let detailVC = segue.destination as! DetailViewController
+            detailVC.business = self.businesses[(ip?.row)!]
+            
+        }
     }
 
 }
@@ -84,6 +96,7 @@ class BusinessesViewController: UIViewController {
 // Table view data source and delegate
 extension BusinessesViewController: UITableViewDelegate, UITableViewDataSource, FilterViewControllerDelegate {
     
+    // Function used to set the number of row
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if shouldShowSearchResults {
             if filteredBusiness != nil {
@@ -101,6 +114,7 @@ extension BusinessesViewController: UITableViewDelegate, UITableViewDataSource, 
 
     }
     
+    // Function used to cast the business cell from API or search
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "BusinessCell") as! BusinessCell
         
@@ -115,6 +129,7 @@ extension BusinessesViewController: UITableViewDelegate, UITableViewDataSource, 
         
     }
     
+    // Delegate used to catch the signal from filter view
     func filterViewController(filterViewController: FilterViewController, didUpdateFilter filters: [String], didUpdateDeal deal: Bool, didUpdateSort sortMode: Int, didUpdateDistance distance: Int) {
         
         print("I got new filters from filterVC")
@@ -126,6 +141,11 @@ extension BusinessesViewController: UITableViewDelegate, UITableViewDataSource, 
             }
             
         }
+    }
+    
+    // Function used to deselect the selected row
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
 }
