@@ -20,9 +20,9 @@ The following **additional** features are implemented:
 - [x] Distance filter should expand as in the real Yelp app.
 - [x] Categories should show a subset of the full list with a "See All" row to expand.
 - [x] Change the UI View to be more delicious, add many icons for the apps
-- [] Infinite scroll for restaurant results
+- [ ] Infinite scroll for restaurant results
 - [x] Implement map view of restaurant results
-- [] Implement a custom switch
+- [ ] Implement a custom switch
 - [x] Implement the restaurant detail page.
 
 ## Video Walkthrough 
