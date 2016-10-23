@@ -19,8 +19,8 @@
 		F53F814E1DB68A5F009F41C2 /* SwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53F814D1DB68A5F009F41C2 /* SwitchCell.swift */; };
 		F555B5441DBA8CEA0040E73B /* DealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F555B5431DBA8CEA0040E73B /* DealCell.swift */; };
 		F5AB43A41DBD0E8000100EFC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AB43A31DBD0E8000100EFC /* DetailViewController.swift */; };
-		F5AB43A61DBD111700100EFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5AB43A51DBD111700100EFC /* Main.storyboard */; };
 		F5CD2A431DB5416E007442D6 /* BusinessCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CD2A421DB5416D007442D6 /* BusinessCell.swift */; };
+		F5F291D61DBD5558005A6AC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5F291D41DBD5558005A6AC4 /* Main.storyboard */; };
 		F5F730A81DBC750200732AB8 /* SortCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F730A71DBC750200732AB8 /* SortCell.swift */; };
 		F5F730AA1DBCA5DB00732AB8 /* DistanceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F730A91DBCA5DB00732AB8 /* DistanceCell.swift */; };
 /* End PBXBuildFile section */
@@ -54,8 +54,8 @@
 		F53F814D1DB68A5F009F41C2 /* SwitchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchCell.swift; sourceTree = "<group>"; };
 		F555B5431DBA8CEA0040E73B /* DealCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealCell.swift; sourceTree = "<group>"; };
 		F5AB43A31DBD0E8000100EFC /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		F5AB43A51DBD111700100EFC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
 		F5CD2A421DB5416D007442D6 /* BusinessCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessCell.swift; sourceTree = "<group>"; };
+		F5F291D51DBD5558005A6AC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F5F730A71DBC750200732AB8 /* SortCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortCell.swift; sourceTree = "<group>"; };
 		F5F730A91DBCA5DB00732AB8 /* DistanceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistanceCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,7 +106,7 @@
 				222D8A7A19CCFAAA00D2DB53 /* API */,
 				22AAAA9D1AEA1EC600A544AF /* View Controllers */,
 				222D8A5A19CCF9F900D2DB53 /* AppDelegate.swift */,
-				F5AB43A51DBD111700100EFC /* Main.storyboard */,
+				F5F291D41DBD5558005A6AC4 /* Main.storyboard */,
 				F53F814D1DB68A5F009F41C2 /* SwitchCell.swift */,
 				F5F730A71DBC750200732AB8 /* SortCell.swift */,
 				F5F730A91DBCA5DB00732AB8 /* DistanceCell.swift */,
@@ -241,7 +241,9 @@
 				TargetAttributes = {
 					222D8A5419CCF9F900D2DB53 = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = B48Q8K2TRD;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 					};
 					222D8A6919CCF9F900D2DB53 = {
 						CreatedOnToolsVersion = 6.0;
@@ -274,7 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5AB43A61DBD111700100EFC /* Main.storyboard in Resources */,
+				F5F291D61DBD5558005A6AC4 /* Main.storyboard in Resources */,
 				222D8A6519CCF9F900D2DB53 /* LaunchScreen.xib in Resources */,
 				222D8A6219CCF9F900D2DB53 /* Images.xcassets in Resources */,
 			);
@@ -383,6 +385,14 @@
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
+		F5F291D41DBD5558005A6AC4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5F291D51DBD5558005A6AC4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -470,10 +480,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = B48Q8K2TRD;
 				INFOPLIST_FILE = Yelp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = HuyPhung;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -487,10 +499,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = B48Q8K2TRD;
 				INFOPLIST_FILE = Yelp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = HuyPhung;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;

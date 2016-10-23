@@ -13,6 +13,7 @@ import CoreLocation
 class DetailViewController: UIViewController {
     
     // UI variables for restaurant detail
+
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var restaurantImage: UIImageView!
     @IBOutlet weak var reviewImage: UIImageView!
@@ -20,7 +21,6 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var distanceLabel: UILabel!
     @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
-    
     @IBOutlet weak var mapView: MKMapView!
     
     // Variable used to transfer one business from segue
